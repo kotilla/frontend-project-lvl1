@@ -1,0 +1,23 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "project on hexlet",
+  "main": "index.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotilla/frontend-project-lvl1.git"
+  },
+  "author": "Pavel Kolchkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kotilla/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/kotilla/frontend-project-lvl1#readme"
+}
