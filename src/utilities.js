@@ -1,5 +1,7 @@
 const getRandom = (max) => Math.floor(Math.random() * max);
 
+const calculator = (stringForCalculate) => eval(stringForCalculate);
+
 const isEven = (num) => {
   if (num % 2 === 0) {
     return 'yes';
@@ -19,7 +21,12 @@ const getCalculatorQuestion = () => {
   return `${num1} ${operation} ${num2}`;
 };
 
-const calculator = (stringForCalculate) => eval(stringForCalculate);
+const findGCD = (num1, num2) => {
+  if (!num2) {
+    return num1;
+  }
+  return findGCD(num2, num1 % num2);
+};
 
 export default {
   getRandom,
@@ -27,4 +34,5 @@ export default {
   isEven,
   getCalculatorQuestion,
   calculator,
+  findGCD,
 };
