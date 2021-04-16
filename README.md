@@ -6,3 +6,4 @@ example of win and lose
 [![asciicast](https://asciinema.org/a/CIbOGJiPB07zTai4ywMX9rizX.svg)](https://asciinema.org/a/CIbOGJiPB07zTai4ywMX9rizX)
 example install 
 [![asciicast](https://asciinema.org/a/6Kj56ojhKbjKmf8d5P6fTyVxQ.svg)](https://asciinema.org/a/6Kj56ojhKbjKmf8d5P6fTyVxQ)
+[![asciicast](https://asciinema.org/a/6Kj56ojhKbjKmf8d5P6fTyVxQ.svg)](https://asciinema.org/a/3WhP0I3PS0YkYXPMVRt9fPFzL)
