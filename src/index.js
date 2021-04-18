@@ -15,7 +15,7 @@ const runEngine = (gameData) => {
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
       score = 0;
-      console.log(`Let's try again, ${greet.name}`);
+      console.log(`Let's try again, ${greet.name}!`);
     }
   }
   console.log(`Congratulations, ${greet.name}!`);
