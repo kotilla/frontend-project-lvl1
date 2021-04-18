@@ -1,5 +1,7 @@
 const getRandom = (max) => Math.floor(Math.random() * max);
 
+const getRandomMinMax = (min, max) => Math.floor(min + Math.random() * (max + 1 - min));
+
 const calculator = (stringForCalculate) => eval(stringForCalculate);
 
 const isEven = (num) => {
@@ -28,11 +30,33 @@ const findGCD = (num1, num2) => {
   return findGCD(num2, num1 % num2);
 };
 
+const generateProgression = (progressionLength) => {
+  const progressionStep = getRandomMinMax(1, 11);
+  const progressionArray = [];
+  progressionArray.push(getRandom(100));
+  for (let count = 0; count <= progressionLength; count += 1) {
+    progressionArray.push(progressionArray[count] + progressionStep);
+  }
+  return progressionArray;
+};
+
+const deleteNumberOfProgression = () => {
+  const progressionLength = getRandomMinMax(5, 10);
+  const indexOfDeleteNumber = getRandom(progressionLength);
+  const progression = generateProgression(progressionLength);
+  const answer = progression[indexOfDeleteNumber];
+  progression[indexOfDeleteNumber] = '..';
+  return { progression, answer };
+};
+
 export default {
   getRandom,
+  getRandomMinMax,
   getRandomOperation,
   isEven,
   getCalculatorQuestion,
   calculator,
   findGCD,
+  generateProgression,
+  deleteNumberOfProgression,
 };
