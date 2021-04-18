@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import nam from '../src/cli.js';
+import greet from '../src/cli.js';
 
-nam.greeting();
+greet.greeting();
