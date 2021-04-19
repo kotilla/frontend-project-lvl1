@@ -2,7 +2,18 @@ const getRandom = (max) => Math.floor(Math.random() * max);
 
 const getRandomMinMax = (min, max) => Math.floor(min + Math.random() * (max + 1 - min));
 
-const calculator = (stringForCalculate) => eval(stringForCalculate);
+const calculator = (calculationArray) => {
+  switch (calculationArray[1]) {
+    case '*':
+      return calculationArray[0] * calculationArray[2];
+    case '+':
+      return calculationArray[0] + calculationArray[2];
+    case '-':
+      return calculationArray[0] - calculationArray[2];
+    default:
+      return '';
+  }
+};
 
 const isEven = (num) => {
   if (num % 2 === 0) {
@@ -20,7 +31,8 @@ const getCalculatorQuestion = () => {
   const num1 = getRandom(10);
   const num2 = getRandom(10);
   const operation = getRandomOperation();
-  return `${num1} ${operation} ${num2}`;
+  const calculationArray = [num1, operation, num2];
+  return calculationArray;
 };
 
 const findGCD = (num1, num2) => {
